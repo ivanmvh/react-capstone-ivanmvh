@@ -2,10 +2,11 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const getPhotos = createAsyncThunk('Photos/getPhotos', async (parameters) => {
   const photos = await fetch(
-    `https://pixabay.com/api/?key=33467227-a3f0450de27fd480390de418c&category=${parameters.categoryCode}`,
+    // `https://pixabay.com/api/?key=33467227-a3f0450de27fd480390de418c&category=${parameters.categoryCode}`
+    `https://pixabay.com/api/?key=33467227-a3f0450de27fd480390de418c`
   )
     .then((response) => response.json())
-    .then((response) => response._embedded.photos);
+    .then((response) => response.hits);
   const photosApi = photos.map((photo) => {
     const photoInfo = {
       name: photo.tags ?? '',
@@ -78,6 +79,4 @@ const photosSlice = createSlice({
 });
 
 export default photosSlice.reducer;
-export const {
-  filterCategory, photoId, setPhotos, searchPhoto,
-} = photosSlice.actions;
+export const { filterCategory, photoId, setPhotos, searchPhoto } = photosSlice.actions;
