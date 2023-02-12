@@ -1,0 +1,284 @@
+#homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  width: 100vw;
+}
+
+#headerImage {
+  flex-basis: 55%;
+  height: 100%;
+  background: url(../Resources/Images/header2.jpg);
+  background-size: cover;
+
+  /* background-position-x: left;
+  background-position-y: top; */
+}
+
+#headerText {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.847);
+  color: white;
+}
+
+#headerDescription {
+  width: 90%;
+  margin-top: 12px;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+#discoverAction {
+  display: none;
+}
+
+#gridTitle {
+  font-size: 1rem;
+  width: 100%;
+  height: 2rem;
+  border: 1px solid rgb(177, 57, 103);
+  padding-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+#desktopGridTitle {
+  display: none;
+}
+
+hr {
+  display: none;
+}
+
+#categoryGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.categoryContainer {
+  height: 40vh;
+  border: none;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  background-color: rgb(177, 57, 103);
+}
+
+.categoryContainer:nth-child(4n+1) {
+  background-color: rgb(236, 76, 138);
+}
+
+.categoryContainer:nth-child(4n+4) {
+  background-color: rgb(236, 76, 138);
+}
+
+.categoryLink {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: white;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.categoryTitle {
+  padding-right: 5%;
+  text-decoration: none;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(177, 57, 103, 0.237);
+}
+
+.categoryTitle:hover {
+  background-color: rgba(0, 0, 0, 0.719);
+}
+
+#backgrounds {
+  background: url(../Resources/Images/cat_backgrounds.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-size: cover;
+}
+
+#fashion {
+  background: url(../Resources/Images/cat_fashion.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+#nature {
+  background: url(../Resources/Images/cat_nature.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+#science {
+  background: url(../Resources/Images/cat_science.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+#education {
+  background: url(../Resources/Images/cat_education.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+#feelings {
+  background: url(../Resources/Images/cat_feelings.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.categoryLink:hover {
+  filter: grayscale(20%);
+  background-size: cover;
+}
+
+/* Apply filer to images */
+
+.filtered {
+  background: rgb(236, 76, 138);
+  position: relative;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.filtered img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+
+.filtered,
+.not-filtered {
+  float: left;
+  max-width: 50%;
+  border: 10px solid white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  #root {
+    width: 60%;
+    margin: auto;
+  }
+
+  header {
+    height: 20vh;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  #headerImage {
+    /* height: 100%; */
+    background: url(../Resources/Images/header2.jpg);
+    background-size: cover;
+
+    /*
+    background-position-x: left;
+    background-position-y: 80%;
+    */
+
+    /* object-fit: content; */
+    height: auto;
+    max-width: 100%;
+  }
+
+  #headerText {
+    font-size: 0.5rem;
+  }
+
+  #headerDescription {
+    font-size: 1.3rem;
+  }
+
+  #categoryGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .categoryLink {
+    font-size: 25px;
+  }
+
+  #desktopGridTitle {
+    display: block;
+    margin-top: 3%;
+  }
+
+  hr {
+    display: block;
+    margin: 12px;
+    width: 15%;
+  }
+
+  .categoryContainer {
+    /* height: 40vh; */
+    border: none;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+  }
+
+  #discoverAction {
+    display: block;
+    margin-top: 5%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #discoverAction:hover {
+    margin-top: 6%;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+}
