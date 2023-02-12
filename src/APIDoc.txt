@@ -34,4 +34,32 @@ const photosArray = async () => {
   return photos;
 };
 
+Datos que devuelve la api:
+
+id	7776861
+previewWidth	150
+previewHeight	100
+webformatWidth	640
+webformatHeight	427
+imageWidth	5568
+imageHeight	3712
+imageSize	3894018
+views	6038
+downloads	5518
+collections	5
+likes	80
+comments	52
+user_id	3764790
+user	"ELG21"
+
+
+type	"photo"
+tags	"sculpture, moon, sunset"
+
+pageURL	      "https://pixabay.com/photos/sculpture-moon-sunset-architecture-7776861/"
+previewURL	  "https://cdn.pixabay.com/photo/2023/02/08/15/10/sculpture-7776861_150.jpg"
+webformatURL	"https://pixabay.com/get/g76963fb30cceeb0026d138909fe19eac9331627adb17275d344c90ff375705ffc01325031b5d319538428fab9dafdeeb6d20e2db0f4a4a451867b0fec425b33e_640.jpg"
+largeImageURL	"https://pixabay.com/get/g9596c11714dd7a87e6bfc0fa2eac867a634711feb2007020d1fb79e46af152895a0fff104c35712a61648ceb06c73b2675ffa13542da163495ca71723d121ce0_1280.jpg"
+userImageURL	"https://cdn.pixabay.com/user/2022/04/07/18-24-56-559_250x250.jpg"
+
 */

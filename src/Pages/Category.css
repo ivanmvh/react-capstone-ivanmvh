@@ -1,0 +1,223 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.categoryHeader {
+  height: 30vh;
+  display: flex;
+  width: 100%;
+
+}
+
+.categoryHeaderImage {
+  background: red;
+  flex-basis: 100%;
+  height: 100%;
+
+}
+
+.rightSide {
+  display: none;
+}
+
+#photosGrid {
+  width: 90%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0px;
+  text-align: center;
+}
+
+.photoCard {
+  width: 100%;
+  height: 120px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.photoCard:hover {
+  border: 2px solid red;
+  background-color: #f4f5f0;
+}
+
+.photoStatus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10px;
+  width: 80px;
+  position: relative;
+  top: -8px;
+  left: 60%;
+  font-size: 10px;
+}
+
+.photoName {
+  width: 100%;
+  max-height: 50px;
+  overflow-y: hidden;
+}
+
+.cardHr {
+  display: block;
+  width: 30%;
+  margin-left: 35%;
+}
+
+.photoCity,
+.photoDate,
+.photoGenre {
+  font-weight: normal;
+  line-height: 14px;
+}
+
+.photoImageContainer {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid black;
+  height: 100%;
+  width: 100%;
+}
+
+.photoInformation {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  flex-basis: 50%;
+}
+
+#searchBar {
+  width: 70%;
+  border-radius: 20px;
+  height: 30px;
+  margin-top: 3%;
+  border: 1px solid black;
+  display: flex;
+}
+
+#searchInput{
+  width: 90%;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  padding-bottom: 12px;
+}
+
+#searchBtn {
+  border:1px solid transparent;
+  background-color: transparent;
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+}
+
+#searchBtn:hover {
+  background-color: rgba(0, 0, 0, 0.314);
+  cursor: pointer;
+}
+
+.controlPanel {
+  display: flex;
+  width: 40%;
+  margin-bottom: 3%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#nextBtn {
+  border: none; 
+  cursor: pointer;
+  padding: 10px;
+  background: transparent;
+}
+
+#next {
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  height: 15px;
+  width: 15px;
+  transform: rotate(45deg)
+}
+
+#next:hover {
+  border-color: red
+}
+
+#prevBtn {
+  border: none; 
+  cursor: pointer;
+  padding: 10px;
+  background: transparent;
+}
+
+#prev {
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  height: 15px;
+  width: 15px;
+  transform: rotate(225deg)
+}
+
+#prev:hover {
+  border-color: red;
+}
+
+
+
+@media (min-width: 1250px) {
+    #photosGrid {
+      width: 95%;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 24px;
+      text-align: center;
+    }  
+    #searchBar {
+      width: 30%;
+    }
+    #searchInput {
+      width: 94%;
+    }
+    .categoryHeader {
+        height: 60vh;
+        border: none;
+    }
+
+    .categoryHeaderImage {
+      background: red;
+      flex-basis: 50%;
+      height: 100%;
+      border: none;
+    } 
+
+    .photoCard {
+      height: 150px;
+    }
+    
+    .rightSide {
+      display: flex;
+      flex-basis: 50%;
+      background-color: white;
+      justify-content: center;
+      align-items: center;
+    }    
+}
