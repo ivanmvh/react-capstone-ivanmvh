@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import React, { useEffect, useState } from 'react';
 import { ImSearch } from 'react-icons/im';
-import { RxDotFilled } from 'react-icons/rx';
 import { getPhotos, photoId, searchPhoto } from '../Redux/PhotosSlice';
 import './Category.css';
 
@@ -13,8 +12,8 @@ const Category = () => {
   const apiParameters = useSelector((state) => state.Photos.parameters);
   const [parameters, setParameters] = useState(apiParameters);
 
-  console.log(photos);
-
+  /* console.log(photos); */
+  console.log(parameters);
   useEffect(() => {
     dispatch(getPhotos(parameters));
   }, [dispatch, parameters]);
@@ -76,11 +75,10 @@ const Category = () => {
             </div>
             <div className="photoInformation">
               <p className="photoStatus">
-                <RxDotFilled style={{ color: 'green', fontSize: '1rem' }} />
+                <b>Photo.Id.: </b>
                 {photo.id}
               </p>
               <h5 className="photoName">{photo.name}</h5>
-              <hr className="cardHr" />
               <h6 className="photoCity">
                 <b>Views: </b>
                 {photo.views}
