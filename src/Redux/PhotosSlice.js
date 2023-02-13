@@ -2,8 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const getPhotos = createAsyncThunk('Photos/getPhotos', async (parameters) => {
   const photos = await fetch(
-    // `https://pixabay.com/api/?key=33467227-a3f0450de27fd480390de418c&category=${parameters.categoryCode}`
-    `https://pixabay.com/api/?key=33467227-a3f0450de27fd480390de418c`
+    `https://pixabay.com/api/?key=33467227-a3f0450de27fd480390de418c&category=${parameters.categoryCode}`,
   )
     .then((response) => response.json())
     .then((response) => response.hits);
@@ -58,11 +57,18 @@ const photosSlice = createSlice({
       return newState;
     },
     photoId(state, { payload }) {
-      const newState = { ...state, photoId: payload, photoInfo: state.data.filter((photo) => photo.id.indexOf(payload) > -1) };
+      const newState = {
+        ...state,
+        photoId: payload,
+        photoInfo: state.data.filter((photo) => photo.id.indexOf(payload) > -1),
+      };
       return newState;
     },
     searchPhoto(state, { payload }) {
-      const newState = { ...state, data: state.data.filter((photo) => photo.name.toLowerCase().indexOf(payload) > -1) };
+      const newState = {
+        ...state,
+        data: state.data.filter((photo) => photo.name.toLowerCase().indexOf(payload) > -1),
+      };
       return newState;
     },
     setPhotos(state, { payload }) {
@@ -79,4 +85,6 @@ const photosSlice = createSlice({
 });
 
 export default photosSlice.reducer;
-export const { filterCategory, photoId, setPhotos, searchPhoto } = photosSlice.actions;
+export const {
+  filterCategory, photoId, setPhotos, searchPhoto,
+} = photosSlice.actions;
