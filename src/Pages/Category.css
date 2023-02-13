@@ -1,26 +1,28 @@
+/*
 #root {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+*/
+
 a {
   text-decoration: none;
-  color: black;
+  color: white;
+  font-size: 1.2em;
 }
 
 .categoryHeader {
   height: 30vh;
   display: flex;
   width: 100%;
-
 }
 
 .categoryHeaderImage {
   background: red;
   flex-basis: 100%;
   height: 100%;
-
 }
 
 .rightSide {
@@ -33,8 +35,8 @@ a {
   margin-bottom: 3%;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0px;
-  text-align:left;
+  gap: 0;
+  text-align: left;
 }
 
 .photoCard {
@@ -47,10 +49,10 @@ a {
   cursor: pointer;
   */
 
-  height: 30vh;
+  /* height: 30vh; */
   border: none;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   padding: 20px;
   background-color: rgb(177, 57, 103);
 }
@@ -79,6 +81,7 @@ a {
   flex-direction: column;
   padding: 12px;
   flex-basis: 50%;
+  gap: 0.5em;
 }
 
 .photoStatus {
@@ -114,7 +117,7 @@ a {
   display: flex;
 }
 
-#searchInput{
+#searchInput {
   width: 90%;
   height: 30px;
   border-radius: 20px;
@@ -126,7 +129,7 @@ a {
 }
 
 #searchBtn {
-  border:1px solid transparent;
+  border: 1px solid transparent;
   background-color: transparent;
   border-radius: 100%;
   width: 28px;
@@ -148,7 +151,7 @@ a {
 }
 
 #nextBtn {
-  border: none; 
+  border: none;
   cursor: pointer;
   padding: 10px;
   background: transparent;
@@ -159,15 +162,15 @@ a {
   border-right: 4px solid black;
   height: 15px;
   width: 15px;
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }
 
 #next:hover {
-  border-color: red
+  border-color: red;
 }
 
 #prevBtn {
-  border: none; 
+  border: none;
   cursor: pointer;
   padding: 10px;
   background: transparent;
@@ -178,52 +181,54 @@ a {
   border-right: 4px solid black;
   height: 15px;
   width: 15px;
-  transform: rotate(225deg)
+  transform: rotate(225deg);
 }
 
 #prev:hover {
   border-color: red;
 }
 
-
-
 @media (min-width: 1250px) {
-    #photosGrid {
-      width: 95%;
-      margin-top: 3%;
-      margin-bottom: 3%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 24px;
-      text-align: center;
-    }  
-    #searchBar {
-      width: 30%;
-    }
-    #searchInput {
-      width: 94%;
-    }
-    .categoryHeader {
-        height: 60vh;
-        border: none;
-    }
+  #photosGrid {
+    width: 95%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    text-align: center;
+  }
 
-    .categoryHeaderImage {
-      background: red;
-      flex-basis: 50%;
-      height: 100%;
-      border: none;
-    } 
+  #searchBar {
+    width: 30%;
+  }
 
-    .photoCard {
-      height: 150px;
-    }
-    
-    .rightSide {
-      display: flex;
-      flex-basis: 50%;
-      background-color: white;
-      justify-content: center;
-      align-items: center;
-    }    
+  #searchInput {
+    width: 94%;
+  }
+
+  .categoryHeader {
+    flex-direction: column;
+    height: 60vh;
+    border: none;
+  }
+
+  .categoryHeaderImage {
+    background: red;
+    flex-basis: 50%;
+    height: 100%;
+    border: none;
+  }
+
+  .photoCard {
+    height: 150px;
+  }
+
+  .rightSide {
+    display: flex;
+    flex-basis: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
 }

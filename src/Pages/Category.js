@@ -24,13 +24,6 @@ const Category = () => {
         className="categoryHeader"
         /* datatestid="categoryName" */
       >
-        <div className="rightSide">
-          <h1>
-            {' '}
-            Photos in
-            {parameters.categoryName}
-          </h1>
-        </div>
         <div className={`categoryHeaderImage ${parameters.categoryCode}`} />
       </div>
       <h2 id="gridTitle">{parameters.categoryName}</h2>
@@ -69,8 +62,7 @@ const Category = () => {
             <div className="photoImageContainer">
               <img
                 src={photo.previewURL}
-                alt=" "
-                style={{ width: '110px', height: '80px' }}
+                alt={photo.tags}
               />
             </div>
             <div className="photoInformation">
