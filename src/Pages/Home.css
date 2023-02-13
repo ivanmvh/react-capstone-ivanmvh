@@ -113,14 +113,16 @@ hr {
   background-color: rgba(0, 0, 0, 0.719);
 }
 
-#backgrounds {
+/* styles categories */
+
+.backgrounds {
   background: url(../Resources/Images/cat_backgrounds.jpg);
   transition: all 1s ease-in-out;
   cursor: pointer;
   background-size: cover;
 }
 
-#fashion {
+.fashion {
   background: url(../Resources/Images/cat_fashion.jpg);
   transition: all 1s ease-in-out;
   cursor: pointer;
@@ -128,7 +130,7 @@ hr {
   background-size: cover;
 }
 
-#nature {
+.nature {
   background: url(../Resources/Images/cat_nature.jpg);
   transition: all 1s ease-in-out;
   cursor: pointer;
@@ -136,7 +138,7 @@ hr {
   background-size: cover;
 }
 
-#science {
+.science {
   background: url(../Resources/Images/cat_science.jpg);
   transition: all 1s ease-in-out;
   cursor: pointer;
@@ -144,7 +146,7 @@ hr {
   background-size: cover;
 }
 
-#education {
+.education {
   background: url(../Resources/Images/cat_education.jpg);
   transition: all 1s ease-in-out;
   cursor: pointer;
@@ -152,13 +154,15 @@ hr {
   background-size: cover;
 }
 
-#feelings {
+.feelings {
   background: url(../Resources/Images/cat_feelings.jpg);
   transition: all 1s ease-in-out;
   cursor: pointer;
   background-position: center;
   background-size: cover;
 }
+
+/* end -style categories */
 
 .categoryLink:hover {
   filter: grayscale(20%);
