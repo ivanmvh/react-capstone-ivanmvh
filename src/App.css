@@ -15,8 +15,18 @@
 
 body {
   background-color: rgb(214, 63, 121);
+  color: white;
+  font-family: 'Alata', sans-serif;
 }
 
 #root {
   background-color: #d14379;
+}
+
+.alata {
+  font-family: 'Alata', sans-serif;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
 }
