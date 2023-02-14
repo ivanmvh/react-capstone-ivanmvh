@@ -60,7 +60,7 @@ const photosSlice = createSlice({
       const newState = {
         ...state,
         photoId: payload,
-        photoInfo: state.data.filter((photo) => photo.id.indexOf(payload) > -1),
+        photoInfo: state.data.filter((photo) => photo.id === (payload)),
       };
       return newState;
     },
