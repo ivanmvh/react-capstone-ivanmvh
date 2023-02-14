@@ -89,19 +89,20 @@ hr {
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
   background-color: white;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 17px;
+  
 }
 
 .categoryTitle {
   padding-right: 5%;
   text-decoration: none;
-  width: 100%;
   height: 50px;
   display: flex;
   justify-content: flex-end;

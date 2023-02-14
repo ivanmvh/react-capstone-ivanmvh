@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { VscFoldDown } from 'react-icons/vsc';
 import { useDispatch } from 'react-redux';
+import { FaArrowRight } from 'react-icons/fa';
 import { filterCategory } from '../Redux/PhotosSlice';
 import './Home.css';
 
@@ -23,7 +24,6 @@ const Home = () => {
     { categoryCode: 'computer', categoryName: 'computer', page: 0 },
     { categoryCode: 'food', categoryName: 'food', page: 0 },
     { categoryCode: 'sports', categoryName: 'sports', page: 0 },
-    { categoryCode: 'people', categoryName: 'people', page: 0 },
     { categoryCode: 'transportation', categoryName: 'transportation', page: 0 },
     { categoryCode: 'travel', categoryName: 'travel', page: 0 },
     { categoryCode: 'buildings', categoryName: 'buildings', page: 0 },
@@ -73,6 +73,9 @@ const Home = () => {
               )}
               className={`categoryLink ${category.categoryCode}`}
             >
+              <div className="icon-wrapper">
+                <FaArrowRight />
+              </div>
               <h3 className="categoryTitle">{category.categoryName}</h3>
             </NavLink>
           </div>
@@ -83,54 +86,3 @@ const Home = () => {
 };
 
 export default Home;
-
-/*
-      {categoryCode: 'health', categoryName: 'health'},
-      {categoryCode: 'people', categoryName: 'people'},
-      {categoryCode: 'religion', categoryName: 'religion'},
-      {categoryCode: 'places', categoryName: 'places'},
-      {categoryCode: 'animals', categoryName: 'animals'},
-      {categoryCode: 'industry', categoryName: 'industry'},
-      {categoryCode: 'computer', categoryName: 'computer'},
-      {categoryCode: 'food', categoryName: 'food'},
-      {categoryCode: 'sports', categoryName: 'sports'},
-      {categoryCode: 'people', categoryName: 'people'},
-      {categoryCode: 'transportation', categoryName: 'transportation'},
-      {categoryCode: 'travel', categoryName: 'travel'},
-      {categoryCode: 'buildings', categoryName: 'buildings'},
-      {categoryCode: 'music', categoryName: 'music'},
-
-  */
-
-/*
-      return (
-    <div id="homeContainer">
-      <header>
-        <div id="headerImage" />
-        <div id="headerText">
-          <h1>WELCOME TO PHOTOS STORE</h1>
-          <p id="headerDescription">A place where you can find the best photos for free</p>
-          <a id="discoverAction" href="#categoryGrid">
-            <VscFoldDown style={{ color: 'white' }} />
-          </a>
-        </div>
-      </header>
-      <h2 id="gridTitle">PHOTOS BY CATEGORY</h2>
-      <h2 id="desktopGridTitle">CHOOSE YOUR CATEGORY!</h2>
-      <hr />
-      <div id="categoryGrid">
-        {categories.map((category) => (
-          <div className="categoryContainer" key={category.categoryCode}>
-            <NavLink to="./category" className="categoryLink"
-              key={category.categoryCode} id={category.categoryCode}>
-              <h3 className="categoryTitle">{category.categoryName}</h3>
-            </NavLink>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default Home;
-*/

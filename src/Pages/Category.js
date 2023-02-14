@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import React, { useEffect, useState } from 'react';
 import { ImSearch } from 'react-icons/im';
+import { FaArrowRight } from 'react-icons/fa';
 import { getPhotos, photoId, searchPhoto } from '../Redux/PhotosSlice';
 import './Category.css';
 
@@ -21,7 +22,7 @@ const Category = () => {
   }
 
   /* console.log(photos); */
-  console.log(parameters);
+  /* console.log(parameters); */
   useEffect(() => {
     dispatch(getPhotos(parameters));
   }, [dispatch, parameters]);
@@ -74,6 +75,9 @@ const Category = () => {
               />
             </div>
             <div className="photoInformation">
+              <div className="icon-wrapper">
+                <FaArrowRight />
+              </div>
               <p className="photoStatus">
                 <b>Photo.Id.: </b>
                 {photo.id}
@@ -102,7 +106,7 @@ const Category = () => {
           onClick={() => {
             if (parameters.page > 0) {
               setParameters({ ...parameters, page: parameters.page - 1 });
-              console.log(parameters);
+              /* console.log(parameters); */
             }
           }}
         >
@@ -117,7 +121,7 @@ const Category = () => {
           type="button"
           onClick={() => {
             setParameters({ ...parameters, page: parameters.page + 1 });
-            console.log(parameters);
+            /* console.log(parameters); */
           }}
         >
           <div id="next" />

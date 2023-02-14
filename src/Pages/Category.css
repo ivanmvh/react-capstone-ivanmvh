@@ -69,7 +69,7 @@ a {
 .photoImageContainer {
   flex-basis: 50%;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   border-right: 1px solid #b50be5;
   height: 100%;
@@ -82,6 +82,19 @@ a {
   padding: 12px;
   flex-basis: 50%;
   gap: 0.5em;
+}
+
+.icon-wrapper {
+  /*
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  */
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 0.2rem;
+  display: flex;
+  align-self: flex-end;
 }
 
 .photoStatus {
@@ -113,6 +126,7 @@ a {
   border-radius: 20px;
   height: 30px;
   margin-top: 3%;
+  margin-left: 3%;
   border: 1px solid black;
   display: flex;
 }
