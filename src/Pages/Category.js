@@ -12,6 +12,14 @@ const Category = () => {
   const apiParameters = useSelector((state) => state.Photos.parameters);
   const [parameters, setParameters] = useState(apiParameters);
 
+  function capitalizeWords(str) {
+    return str
+      .toLowerCase()
+      .split(' ')
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  }
+
   /* console.log(photos); */
   console.log(parameters);
   useEffect(() => {
@@ -70,7 +78,7 @@ const Category = () => {
                 <b>Photo.Id.: </b>
                 {photo.id}
               </p>
-              <h5 className="photoName">{photo.name}</h5>
+              <h5 className="photoName">{capitalizeWords(photo.name)}</h5>
               <h6 className="photoCity">
                 <b>Views: </b>
                 {photo.views}
