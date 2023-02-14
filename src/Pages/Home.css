@@ -69,7 +69,7 @@ hr {
 }
 
 .categoryContainer {
-  height: 40vh;
+  height: 30vh;
   border: none;
   display: flex;
   align-items: flex-end;
@@ -95,7 +95,7 @@ hr {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .categoryTitle {
@@ -162,6 +162,110 @@ hr {
   background-size: cover;
 }
 
+.health {
+  background: url(../Resources/Images/cat_health.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.people {
+  background: url(../Resources/Images/cat_people.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.religion {
+  background: url(../Resources/Images/cat_religion.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.places {
+  background: url(../Resources/Images/cat_places.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.animals {
+  background: url(../Resources/Images/cat_animals.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.industry {
+  background: url(../Resources/Images/cat_industry.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.computer {
+  background: url(../Resources/Images/cat_computer.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.food {
+  background: url(../Resources/Images/cat_food.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.sports {
+  background: url(../Resources/Images/cat_sports.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.transportation {
+  background: url(../Resources/Images/cat_transportation.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.travel {
+  background: url(../Resources/Images/cat_travel.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.buildings {
+  background: url(../Resources/Images/cat_buildings.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
+.music {
+  background: url(../Resources/Images/cat_music.jpg);
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+  background-position: center;
+  background-size: cover;
+}
+
 /* end -style categories */
 
 .categoryLink:hover {
@@ -202,7 +306,7 @@ img {
 
 @media (min-width: 768px) {
   #root {
-    width: 60%;
+    width: 80%;
     margin: auto;
   }
 
@@ -239,14 +343,14 @@ img {
   #categoryGrid {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0;
     margin-top: 24px;
     margin-bottom: 24px;
   }
 
   .categoryLink {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   #desktopGridTitle {
