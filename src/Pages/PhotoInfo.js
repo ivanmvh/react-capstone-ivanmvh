@@ -16,7 +16,7 @@ const PhotoInfo = () => {
         <div id="photoImageContainer">
           <img
             alt={apiInfo.tags}
-            src={apiInfo.previewURL}
+            src={apiInfo.webformatURL}
           />
         </div>
         <div className="details">

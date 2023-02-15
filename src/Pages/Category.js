@@ -65,7 +65,7 @@ const Category = () => {
             </div>
             <div className="photoImageContainer">
               <img
-                src={photo.previewURL}
+                src={photo.webformatURL}
                 alt={photo.tags}
               />
             </div>
