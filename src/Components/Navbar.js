@@ -1,41 +1,43 @@
-import { NavLink } from 'react-router-dom';
 import './Navbar.css';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import logo from '../Resources/Images/Pixabay-logo.svg';
+/* import { NavLink, useLocation, useNavigate } from 'react-router-dom'; */
+import { NavLink, useLocation } from 'react-router-dom';
+import { IoIosArrowBack, IoIosSettings } from 'react-icons/io';
+import { BsFillMicFill } from 'react-icons/bs';
 
-const Navbar = () => (
-  <nav>
-    <div id="burgerContainer">
-      <GiHamburgerMenu style={{ color: 'red', fontSize: '25px' }} />
-    </div>
-    <NavLink to="/">
-      <img
-        alt="logo"
-        src={logo}
-        id="logo"
-      />
-    </NavLink>
-    <ul id="navigation">
-      <NavLink
-        to="/"
-        className={({ isActive }) => (isActive ? 'navigationLink currentPage' : 'navigationLink')}
-      >
-        Home
-      </NavLink>
-      <NavLink
-        to="/about"
-        className={({ isActive }) => (isActive ? 'navigationLink currentPage' : 'navigationLink')}
-      >
-        About
-      </NavLink>
-      <NavLink
-        to="/profile"
-        className={({ isActive }) => (isActive ? 'navigationLink currentPage' : 'navigationLink')}
-      >
-        My profile
-      </NavLink>
-    </ul>
-  </nav>
-);
+const Navbar = () => {
+  /* const navigate = useNavigate(); */
+  const location = useLocation();
+
+  const currentYear = new Date().getFullYear();
+  return (
+    <nav>
+      <div className="flex row">
+        <NavLink
+          className={({ isActive }) => (isActive ? 'activeLink' : 'homeLink')}
+          to="/"
+          type="button"
+        >
+          <IoIosArrowBack />
+        </NavLink>
+        <p id="year">{currentYear}</p>
+      </div>
+      <p className="header-items">{location.pathname === '/' ? 'most view categories' : 'most view photos'}</p>
+      <div>
+        <button
+          className="buttonNav"
+          type="button"
+        >
+          <BsFillMicFill className="header-items" />
+        </button>
+        <button
+          className="buttonNav"
+          type="button"
+        >
+          <IoIosSettings className="header-items" />
+        </button>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;

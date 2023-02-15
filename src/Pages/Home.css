@@ -11,14 +11,16 @@ header {
   width: 100vw;
 }
 
+.buttonNav {
+  border: none;
+  background-color: transparent;
+  margin-right:10px;
+}
+
 #headerImage {
   flex-basis: 55%;
-  height: 100%;
   background: url(../Resources/Images/header2.jpg);
   background-size: cover;
-
-  /* background-position-x: left;
-  background-position-y: top; */
 }
 
 #headerText {
@@ -29,8 +31,21 @@ header {
   justify-content: center;
   text-align: center;
   font-size: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.847);
+  background-color: rgb(236, 76, 138);
   color: white;
+  font-weight: 800px;
+}
+
+/* Apply filer to images */
+
+.filtered {
+  background: rgb(236, 76, 138);
+}
+
+.filtered img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
 }
 
 #headerDescription {
@@ -274,31 +289,6 @@ hr {
   background-size: cover;
 }
 
-/* Apply filer to images */
-
-.filtered {
-  background: rgb(236, 76, 138);
-  position: relative;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.filtered img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-  opacity: 0.5;
-}
-
-.filtered,
-.not-filtered {
-  float: left;
-  max-width: 50%;
-  border: 10px solid white;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -318,23 +308,9 @@ img {
     overflow-x: hidden;
   }
 
-  #headerImage {
-    /* height: 100%; */
-    background: url(../Resources/Images/header2.jpg);
-    background-size: cover;
-
-    /*
-    background-position-x: left;
-    background-position-y: 80%;
-    */
-
-    /* object-fit: content; */
-    height: auto;
-    max-width: 100%;
-  }
-
   #headerText {
     font-size: 0.5rem;
+    background-color: rgb(236, 76, 138);;
   }
 
   #headerDescription {
@@ -345,8 +321,6 @@ img {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0;
-    margin-top: 24px;
     margin-bottom: 24px;
   }
 
