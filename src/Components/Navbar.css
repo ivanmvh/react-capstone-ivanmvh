@@ -14,7 +14,6 @@ nav {
   height: 50px;
   display: flex;
   align-items: center;
-  padding-left: 5%;
   justify-content: space-between;
   background-color: rgb(203, 65, 117);
 }
@@ -54,4 +53,16 @@ nav {
   #burgerContainer {
     display: none;
   }
+}
+
+.buttonNav {
+  border: none;
+  background-color: transparent;
+}
+
+.header-items {
+  color: white;
+  font-size: '20px';
+  margin-Top: '2px';
+  font-weight: 800; 
 }

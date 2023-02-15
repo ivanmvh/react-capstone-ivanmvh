@@ -30,3 +30,19 @@ body {
 .lato {
   font-family: 'Lato', sans-serif;
 }
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}

@@ -7,7 +7,7 @@ const PhotoInfo = () => {
   const apiInfo = useSelector((state) => state.Photos.photoInfo?.[0] ?? {});
   const parameters = useSelector((state) => state.Photos.parameters);
 
-  console.log('apiInfo:', apiInfo);
+  /* console.log('apiInfo:', apiInfo); */
 
   return (
     <>
