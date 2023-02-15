@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { FaStepBackward } from 'react-icons/fa';
+import { FaArrowLeft } from 'react-icons/fa';
 import './PhotoInfo.css';
 
 const PhotoInfo = () => {
@@ -11,84 +11,100 @@ const PhotoInfo = () => {
 
   return (
     <>
-      <NavLink
-        to={`../category/${parameters.categoryCode}`}
-        id="backArrow"
-      >
-        <FaStepBackward style={{ fontSize: '20px', color: 'red' }} />
-        {' '}
-      </NavLink>
-      <h1 id="photoName">{apiInfo.name ?? ''}</h1>
-      <div
-        id="basicInfo"
-        data-testid="photoInfoContainer"
-      >
+      <h2 id="photoName">{apiInfo.name ?? ''}</h2>
+      <div id="photoCard">
         <div id="photoImageContainer">
           <img
             alt={apiInfo.tags}
             src={apiInfo.previewURL}
-            style={{ height: '150px' }}
           />
         </div>
-        <div id="details">
-          <div id="prices">
-            <p id="minPrice">
-              <b>Photo.Id.: </b>
-              {apiInfo.Id}
+        <div className="details">
+          <NavLink
+            to={`../category/${parameters.categoryCode}`}
+            id="backArrow"
+          >
+            <FaArrowLeft style={{ fontSize: '20px', color: 'white' }} />
+          </NavLink>
+          <div className="det-row">
+            <p id="photoId">
+              <b>Photo.Id. </b>
             </p>
-            <p id="maxPrice">
-              <b>Max Price: </b>
-              {apiInfo.prices?.[0]?.max ?? 'Not available'}
-              {apiInfo.prices?.[0]?.currency ?? ''}
-            </p>
+            <p>{apiInfo.id}</p>
           </div>
-          <div id="dates">
-            <p id="date">
-              <b>Date: </b>
-              {apiInfo.startDate ?? ''}
+          <div className="det-row">
+            <p id="views">
+              <b>Views </b>
             </p>
-            <p id="time">
-              <b>Local Time: </b>
-              {' '}
-              {apiInfo.startTime ?? ''}
-            </p>
+            <p>{apiInfo.views}</p>
           </div>
-          <div id="genres">
-            <p id="genre">
-              <b>Genre: </b>
-              {apiInfo.genre ?? ''}
+          <div className="det-row">
+            <p id="likes">
+              <b>Likes </b>
             </p>
-            <p id="subGenre">
-              <b>Sub Genre: </b>
-              {apiInfo.subGenre ?? ''}
-            </p>
+            <p>{apiInfo.likes}</p>
           </div>
-          <div id="city">
-            <p>
-              <b>City: </b>
-              {apiInfo.city ?? ''}
+          <div className="det-row">
+            <p id="downloads">
+              <b>Downloads </b>
             </p>
+            <p>{apiInfo.downloads}</p>
           </div>
-          <div id="purchaseContainer">
-            <a
-              href={apiInfo.purchase ?? ''}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {' '}
-              PURCHASE
-              {' '}
-            </a>
+          <div className="det-row">
+            <p id="collections">
+              <b>Collections </b>
+            </p>
+            <p>{apiInfo.collections}</p>
+          </div>
+          <div className="det-row">
+            <p id="previewWidth">
+              <b>Preview Width </b>
+            </p>
+            <p>{apiInfo.previewWidth}</p>
+          </div>
+          <div className="det-row">
+            <p id="previewHeight">
+              <b>Preview Height </b>
+            </p>
+            <p>{apiInfo.previewHeight}</p>
+          </div>
+          <div className="det-row">
+            <p id="webformaWidth">
+              <b>Web format Width </b>
+            </p>
+            <p>{apiInfo.webformatWidth}</p>
+          </div>
+          <div className="det-row">
+            <p id="webformatHeight">
+              <b>Web format Heigth </b>
+            </p>
+            <p>{apiInfo.webformatHeight}</p>
+          </div>
+          <div className="det-row">
+            <p id="imageWidth">
+              <b>Image Width </b>
+            </p>
+            <p>{apiInfo.imageWidth}</p>
+          </div>
+          <div className="det-row">
+            <p id="imageSize">
+              <b>Image Size </b>
+            </p>
+            <p>{apiInfo.imageSize}</p>
+          </div>
+          <div className="det-row">
+            <p id="userId">
+              <b>User.Id </b>
+            </p>
+            <p>{apiInfo.userId}</p>
+          </div>
+          <div className="det-row">
+            <p id="user">
+              <b>User </b>
+            </p>
+            <p>{apiInfo.user}</p>
           </div>
         </div>
-      </div>
-      <p id="photoDescription">{apiInfo.info ?? ''}</p>
-      <div id="seatMapContainer">
-        <img
-          id="seatMap"
-          src={apiInfo.seat ?? ''}
-          alt="seatmap"
-        />
       </div>
     </>
   );
