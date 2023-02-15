@@ -58,26 +58,21 @@ a {
 }
 
 .photoImageContainer {
-  /* flex-basis: 50%; */
   display: flex;
-  /* align-items: center; */
-  /*justify-content:flex-start; */
-  /* flex-basis:70%; */
 }
 
 .photoImageContainer img {
-  /* height: 30vh; */
-  /* width: auto; */
   height: 20vw;
+  padding: 5px;
 }
 
 .photoInformation {
   display: flex;
   flex-direction: column;
-  flex-basis: 50%;
   gap: 0.5em;
   align-self: flex-end;
-  font-size: 1em;
+  font-size: 0.6em;
+  padding: 3px;
 }
 
 .icon-wrapper {
@@ -92,14 +87,10 @@ a {
 
 .photoId {
   font-weight: normal;
-  line-height: 14px;
-  font-size: 15px;
 }
 
 .photoViews {
   font-weight: normal;
-  line-height: 14px;
-  font-size: 15px;
 }
 
 .cardHr {

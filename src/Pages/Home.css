@@ -135,6 +135,7 @@ hr {
   background: url(../Resources/Images/cat_backgrounds.jpg);
   transition: all 1s ease-in-out;
   cursor: pointer;
+  background-position: center;
   background-size: cover;
 }
 
@@ -182,7 +183,6 @@ hr {
   background: url(../Resources/Images/cat_health.jpg);
   transition: all 1s ease-in-out;
   cursor: pointer;
-  background-position: center;
   background-size: cover;
 }
 
@@ -293,7 +293,7 @@ hr {
   box-sizing: border-box;
 }
 
-/* DESKTOP */
+/* DESKTOP MEDIA */
 
 @media (min-width: 768px) {
   #root {
@@ -340,7 +340,6 @@ hr {
   }
 
   .categoryContainer {
-    /* height: 40vh; */
     border: none;
     display: flex;
     align-items: flex-end;

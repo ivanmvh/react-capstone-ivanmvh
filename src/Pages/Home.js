@@ -35,7 +35,7 @@ const Home = () => {
           </a>
         </div>
       </header>
-      <h2 id="gridTitle">PHOTOS BY CATEGORY</h2>
+      <h2 id="gridTitle">Categories</h2>
       <div id="categoryGrid">
         {categories.map((category) => (
           <div
