@@ -227,7 +227,7 @@ a {
 
   .categoryHeaderImage {
     background: red;
-    flex-basis: 50%;
+    /* flex-basis: 50%; */
     height: 100%;
     border: none;
   }
