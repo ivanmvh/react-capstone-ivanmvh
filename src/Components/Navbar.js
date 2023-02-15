@@ -21,7 +21,7 @@ const Navbar = () => {
         </NavLink>
         <p id="year">{currentYear}</p>
       </div>
-      <p className="header-items">{location.pathname === '/' ? 'most view categories' : 'most view photos'}</p>
+      <p className="header-items">{location.pathname === '/' ? 'most view categories' : 'photos views'}</p>
       <div>
         <button
           className="buttonNav"

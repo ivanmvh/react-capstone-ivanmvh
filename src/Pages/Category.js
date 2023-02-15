@@ -13,14 +13,6 @@ const Category = () => {
   const apiParameters = useSelector((state) => state.Photos.parameters);
   const [parameters, setParameters] = useState(apiParameters);
 
-  function capitalizeWords(str) {
-    return str
-      .toLowerCase()
-      .split(' ')
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
-  }
-
   /* console.log(photos); */
   /* console.log(parameters); */
   useEffect(() => {
@@ -68,6 +60,9 @@ const Category = () => {
             key={photo.id}
             to={`./${photo.id}`}
           >
+            <div className="icon-wrapper">
+              <FaArrowRight />
+            </div>
             <div className="photoImageContainer">
               <img
                 src={photo.previewURL}
@@ -75,26 +70,14 @@ const Category = () => {
               />
             </div>
             <div className="photoInformation">
-              <div className="icon-wrapper">
-                <FaArrowRight />
-              </div>
-              <p className="photoStatus">
+              <p className="photoId">
                 <b>Photo.Id.: </b>
                 {photo.id}
               </p>
-              <h5 className="photoName">{capitalizeWords(photo.name)}</h5>
-              <h6 className="photoCity">
+              <p className="photoViews">
                 <b>Views: </b>
                 {photo.views}
-              </h6>
-              <h6 className="photoGenre">
-                <b>Downloads: </b>
-                {photo.downloads}
-              </h6>
-              <h6 className="photoDate">
-                <b>Likes: </b>
-                {photo.likes}
-              </h6>
+              </p>
             </div>
           </NavLink>
         ))}

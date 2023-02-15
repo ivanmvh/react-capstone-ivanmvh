@@ -1,12 +1,3 @@
-/*
-#root {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-*/
-
 a {
   text-decoration: none;
   color: white;
@@ -20,7 +11,7 @@ a {
 }
 
 .categoryHeaderImage {
-  background: red;
+  background: rgb(214, 63, 121);
   flex-basis: 100%;
   height: 100%;
 }
@@ -36,29 +27,29 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
-  text-align: left;
+  text-align: right;
 }
 
 .photoCard {
-  /*
-  width: 100%;
-  height: 120px;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
   cursor: pointer;
-  */
-
-  /* height: 30vh; */
   border: none;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   padding: 20px;
   background-color: rgb(177, 57, 103);
 }
 
-.photoCard:nth-child(2n) {
+.photoCard:nth-child(4n-2) {
   background-color: rgb(236, 76, 138);
+}
+
+.photoCard:nth-child(4n-1) {
+  background-color: rgb(236, 76, 138);;
+}
+
+.photoCard:nth-child(4n) {
+  background-color: rgb(177, 57, 103);;
 }
 
 .photoCard:hover {
@@ -67,13 +58,17 @@ a {
 }
 
 .photoImageContainer {
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
   display: flex;
   /* align-items: center; */
-  justify-content: center;
-  border-right: 1px solid #b50be5;
-  height: 100%;
-  width: 100%;
+  /*justify-content:flex-start; */
+  /* flex-basis:70%; */
+}
+
+.photoImageContainer img {
+  /* height: 30vh; */
+  /* width: auto; */
+  height: 20vw;
 }
 
 .photoInformation {
@@ -81,6 +76,8 @@ a {
   flex-direction: column;
   flex-basis: 50%;
   gap: 0.5em;
+  align-self: flex-end;
+  font-size: 1em;
 }
 
 .icon-wrapper {
@@ -93,15 +90,16 @@ a {
   margin:3px;
 }
 
-.photoStatus {
+.photoId {
   font-weight: normal;
   line-height: 14px;
+  font-size: 15px;
 }
 
-.photoName {
-  width: 100%;
-  max-height: 50px;
-  overflow-y: hidden;
+.photoViews {
+  font-weight: normal;
+  line-height: 14px;
+  font-size: 15px;
 }
 
 .cardHr {
@@ -110,22 +108,16 @@ a {
   margin-left: 35%;
 }
 
-.photoCity,
-.photoDate,
-.photoGenre {
-  font-weight: normal;
-  line-height: 14px;
-}
-
 #searchBar {
+  display: flex;
   width: 70%;
   border-radius: 20px;
   height: 30px;
+  margin:0;
   margin-top: 3%;
   margin-left: 3%;
   border: 1px solid #b50be5;
-  display: flex;
-  background-color:  rgb(177, 57, 103);
+  background-color: rgb(177, 57, 103);
 }
 
 #searchInput {
@@ -208,7 +200,6 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
-    text-align: center;
   }
 
   #searchBar {
@@ -227,15 +218,11 @@ a {
 
   .categoryHeaderImage {
     background: red;
-    /* flex-basis: 50%; */
     height: 100%;
     border: none;
   }
 
-  .photoCard {
-    height: 150px;
-  }
-
+  
   .rightSide {
     display: flex;
     flex-basis: 50%;
