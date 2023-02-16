@@ -1,11 +1,9 @@
 import './Navbar.css';
-/* import { NavLink, useLocation, useNavigate } from 'react-router-dom'; */
 import { NavLink, useLocation } from 'react-router-dom';
 import { IoIosArrowBack, IoIosSettings } from 'react-icons/io';
 import { BsFillMicFill } from 'react-icons/bs';
 
 const Navbar = () => {
-  /* const navigate = useNavigate(); */
   const location = useLocation();
 
   const currentYear = new Date().getFullYear();

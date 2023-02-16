@@ -13,8 +13,6 @@ const Category = () => {
   const apiParameters = useSelector((state) => state.Photos.parameters);
   const [parameters, setParameters] = useState(apiParameters);
 
-  /* console.log(photos); */
-  /* console.log(parameters); */
   useEffect(() => {
     dispatch(getPhotos(parameters));
   }, [dispatch, parameters]);
@@ -23,7 +21,6 @@ const Category = () => {
     <>
       <div
         className="categoryHeader"
-        /* datatestid="categoryName" */
       >
         <div className={`categoryHeaderImage ${parameters.categoryCode}`} />
       </div>
@@ -89,7 +86,6 @@ const Category = () => {
           onClick={() => {
             if (parameters.page > 0) {
               setParameters({ ...parameters, page: parameters.page - 1 });
-              /* console.log(parameters); */
             }
           }}
         >
@@ -104,7 +100,6 @@ const Category = () => {
           type="button"
           onClick={() => {
             setParameters({ ...parameters, page: parameters.page + 1 });
-            /* console.log(parameters); */
           }}
         >
           <div id="next" />
