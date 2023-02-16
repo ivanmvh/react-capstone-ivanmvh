@@ -2,7 +2,7 @@ import '@testing-library/jest-dom';
 import { render, screen, waitFor } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-import store from '../redux/store';
+import store from '../Redux/store';
 import PhotoInfo from '../Pages/PhotoInfo';
 
 const photoInfo = {
