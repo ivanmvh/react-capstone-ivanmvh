@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About renders About component 1`] = `undefined`;
+
+exports[`Profile renders Profile component 1`] = `undefined`;

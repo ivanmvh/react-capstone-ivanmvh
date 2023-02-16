@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h1><b>PHOTOS REACT CAPSTONE</b></h1>
+  <h1><b> REACT CAPSTONE IVANMVH</b></h1>
 </div>
 
 # 📗 Table of Contents
@@ -26,9 +26,7 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
-
-# 🎯 Photo React Capstone<a name="about-project"></a>
+# 🎯 React-Capstone-ivanmvh<a name="about-project"></a>
 
 > This React capstone project is about building a mobile web application to check a list of metrics (numeric values) that you will create making use of React and Redux.
 
@@ -36,8 +34,8 @@ We will select the API: [Pixabay Developer API](https://pixabay.com/service/abou
 
 The webapp will have several pages:
 
-    - One page with a list of items that could be filtered by some parameters; in the example below, it's a list of metrics that can be filtered by the country (imagine a search field to introduce the country name like Italy, Croatia, etc.). This page should be your homepage.
-    - Another page for the item details; in the example, the detail page for Czech Republic cities with number of views.
+    - One page with a list of items that could be filtered by some parameters; in the example below, it's a list of metrics that can be filtered by the photo category (imagine a search field to introduce the photo category name like music, nature, people, science etc.). This page should be your homepage.
+    - Another page for the item details; in the example, the detail page for the photo selected.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -72,20 +70,17 @@ This project is a simple metrics app. The main features are:
 
 - **Mainly consists of two page:**
 - **Home page with a list of photo categories**
-- **Detail page for the photo selected.**
+- **Detail page for the details of the selected photo.**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - [Live Demo Link]() -->
+[Live Demo Link](https://ivanmvh.github.io/react-capstone-ivanmvh/)
 
-Sorry, Currently no active link available.
+[Intro video](https://drive.google.com/file/d/1e_rTVU-khN6rWv-eB-JlO7PXKftfENWA/view?usp=sharing)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -104,7 +99,7 @@ you have to those tools in your local machine.
 Clone the project.
 
 ```bash
-  git clone git@github.com:ivanmvh/photos-react-capstone-ivanmvh.git
+  git clone git@github.com:ivanmvh/react-capstone-ivanmvh.git
 ```
 
 Go to the project directory.
@@ -150,7 +145,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -168,8 +162,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
@@ -178,15 +170,11 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
-
 ## 👋 Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🔭Acknowledgments <a name="acknowledgements"></a>
 
@@ -203,7 +191,7 @@ Give a ⭐️ if you like this project!
 
 - **Are you using database?**
 
-  - No, I am not using any database.
+  - I'm using the [Pixabay API](https://pixabay.com/service/about/api//)
 
 - **Can I use this project for personal use?**
 

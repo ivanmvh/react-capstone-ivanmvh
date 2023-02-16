@@ -1,0 +1,65 @@
+// This is the call that we can use to call all the photos that we have available
+/*
+const allPhotos = async () => {
+  const categoryCode = 'music';
+  const photos = await fetch(`https://pixabay.com/api/?key=33467227-a3f0450de27fd480390de418c&category=${categoryCode}`)
+    //const photos = await fetch(`https://pixabay.com/api/?key=33467227-a3f0450de27fd480390de418c&category=musica`)
+    .then((response) => response.json())
+    .then((response) => console.log(response));
+  return photos;
+};
+
+let x = allPhotos;
+
+// We can filter the API information changing some variables, in this case,
+// I want to explore how can I create a photo that can change the page and the category of the photo
+
+// const page = 3; // This page will be placed in the end of the requirement
+
+// We also can filter the photos by category using the category code,
+// and this information is placed just before of the API key
+
+// The web page doesn't provide information of the categories that are available with the API,
+// so I will do it manually creating an array
+
+const availableCategories = ['backgrounds', 'fashion', 'nature', 'science', 'education',
+  'feelings', 'health', 'people',
+  'religion', 'places', 'animals', 'industry', 'computer', 'food', 'sports', 'transportation',
+  'travel', 'buildings', 'business', 'music'];
+
+const photosArray = async () => {
+  const photos = await fetch(`https://pixabay.com/api/?key=33467227-a3f0450de27fd480390de418c&category=musica`)
+    .then((response) => response.json())
+    .then((response) => console.log(response));
+  return photos;
+};
+
+Datos que devuelve la api:
+
+id	7776861
+previewWidth	150
+previewHeight	100
+webformatWidth	640
+webformatHeight	427
+imageWidth	5568
+imageHeight	3712
+imageSize	3894018
+views	6038
+downloads	5518
+collections	5
+likes	80
+comments	52
+user_id	3764790
+user	"ELG21"
+
+
+type	"photo"
+tags	"sculpture, moon, sunset"
+
+pageURL	      "https://pixabay.com/photos/sculpture-moon-sunset-architecture-7776861/"
+previewURL	  "https://cdn.pixabay.com/photo/2023/02/08/15/10/sculpture-7776861_150.jpg"
+webformatURL	"https://pixabay.com/get/g76963fb30cceeb0026d138909fe19eac9331627adb17275d344c90ff375705ffc01325031b5d319538428fab9dafdeeb6d20e2db0f4a4a451867b0fec425b33e_640.jpg"
+largeImageURL	"https://pixabay.com/get/g9596c11714dd7a87e6bfc0fa2eac867a634711feb2007020d1fb79e46af152895a0fff104c35712a61648ceb06c73b2675ffa13542da163495ca71723d121ce0_1280.jpg"
+userImageURL	"https://cdn.pixabay.com/user/2022/04/07/18-24-56-559_250x250.jpg"
+
+*/

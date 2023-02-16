@@ -1,0 +1,62 @@
+#photoName {
+  margin: 0;
+  text-align: center;
+}
+
+#photoCard {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  padding: 30px;
+  gap: 5px;
+}
+
+.det-row {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  background-color: rgb(177, 57, 103);
+}
+
+.det-row:nth-child(2n) {
+  background-color: rgb(236, 76, 138);
+}
+
+#photoImageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#photoImageContainer img {
+  height: 60vw;
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+  #photoName {
+    margin: 3%;
+  }
+
+  #photoCard {
+    width: 100%;
+    flex-direction: column;
+    height: 50%;
+  }
+
+  #photoImageContainer {
+    width: 100%;
+  }
+
+  #photoImageContainer img {
+    padding: 5px;
+    width: 90%;
+    height: auto;
+  }
+}

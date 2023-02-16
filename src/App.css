@@ -1,0 +1,48 @@
+/* RESET */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* RESET */
+
+body {
+  background-color: rgb(214, 63, 121);
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+#root {
+  background-color: #d14379;
+}
+
+.alata {
+  font-family: 'Alata', sans-serif;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}

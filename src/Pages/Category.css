@@ -1,0 +1,221 @@
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+}
+
+.categoryHeader {
+  height: 30vh;
+  display: flex;
+  width: 100%;
+}
+
+.categoryHeaderImage {
+  background: rgb(214, 63, 121);
+  flex-basis: 100%;
+  height: 100%;
+}
+
+.rightSide {
+  display: none;
+}
+
+#photosGrid {
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  text-align: right;
+}
+
+.photoCard {
+  cursor: pointer;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: rgb(177, 57, 103);
+}
+
+.photoCard:nth-child(4n-2) {
+  background-color: rgb(236, 76, 138);
+}
+
+.photoCard:nth-child(4n-1) {
+  background-color: rgb(236, 76, 138);
+}
+
+.photoCard:nth-child(4n) {
+  background-color: rgb(177, 57, 103);
+}
+
+.photoCard:hover {
+  border: none;
+  background-color: #845b84;
+}
+
+.photoImageContainer {
+  display: flex;
+}
+
+.photoImageContainer img {
+  height: 25vw;
+  padding: 5px;
+}
+
+.photoInformation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-self: flex-end;
+  font-size: 0.6em;
+  padding: 3px;
+}
+
+.icon-wrapper {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 0.2rem;
+  display: flex;
+  align-self: flex-end;
+  font-size: 15px;
+  margin: 3px;
+}
+
+.photoId {
+  font-weight: normal;
+}
+
+.photoViews {
+  font-weight: normal;
+}
+
+.cardHr {
+  display: block;
+  width: 30%;
+  margin-left: 35%;
+}
+
+#searchBar {
+  display: flex;
+  width: 70%;
+  border-radius: 20px;
+  height: 30px;
+  margin: 0;
+  margin-top: 3%;
+  margin-left: 3%;
+  border: 1px solid #b50be5;
+  background-color: rgb(177, 57, 103);
+}
+
+#searchInput {
+  width: 90%;
+  height: 30px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  padding-bottom: 12px;
+  color: white;
+}
+
+#searchBtn {
+  border: 1px solid transparent;
+  background-color: transparent;
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+}
+
+#searchBtn:hover {
+  background-color: rgba(0, 0, 0, 0.314);
+  cursor: pointer;
+}
+
+.controlPanel {
+  display: flex;
+  width: 40%;
+  margin-bottom: 3%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#nextBtn {
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  background: transparent;
+}
+
+#next {
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  height: 15px;
+  width: 15px;
+  transform: rotate(45deg);
+}
+
+#next:hover {
+  border-color: red;
+}
+
+#prevBtn {
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  background: transparent;
+}
+
+#prev {
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  height: 15px;
+  width: 15px;
+  transform: rotate(225deg);
+}
+
+#prev:hover {
+  border-color: red;
+}
+
+@media (min-width: 1250px) {
+  #photosGrid {
+    width: 95%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: grid;
+  }
+
+  #searchBar {
+    width: 30%;
+  }
+
+  #searchInput {
+    width: 94%;
+  }
+
+  .categoryHeader {
+    flex-direction: column;
+    height: 60vh;
+    border: none;
+  }
+
+  .categoryHeaderImage {
+    background: red;
+    height: 100%;
+    border: none;
+  }
+
+  .rightSide {
+    display: flex;
+    flex-basis: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+}
