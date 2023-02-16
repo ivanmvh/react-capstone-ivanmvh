@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h1><b>PHOTOS REACT CAPSTONE</b></h1>
+  <h1><b> REACT CAPSTONE IVANMVH</b></h1>
 </div>
 
 # 📗 Table of Contents
@@ -25,8 +25,6 @@
 - [🔭 Acknowledgements](#acknowledgements)
 - [❓ FAQ](#faq)
 - [📝 License](#license)
-
-<!-- PROJECT DESCRIPTION -->
 
 # 🎯 Photo React Capstone<a name="about-project"></a>
 
@@ -75,17 +73,12 @@ This project is a simple metrics app. The main features are:
 - **Detail page for the photo selected.**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - [Live Demo Link]() -->
+[Live Demo Link](https://ivanmvh.github.io/react-capstone-ivanmvh/)
 
-Sorry, Currently no active link available.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -104,7 +97,7 @@ you have to those tools in your local machine.
 Clone the project.
 
 ```bash
-  git clone git@github.com:ivanmvh/photos-react-capstone-ivanmvh.git
+  git clone git@github.com:ivanmvh/react-capstone-ivanmvh.git
 ```
 
 Go to the project directory.
@@ -150,7 +143,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -168,8 +160,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
-
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
@@ -178,15 +168,11 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
-
 ## 👋 Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🔭Acknowledgments <a name="acknowledgements"></a>
 
