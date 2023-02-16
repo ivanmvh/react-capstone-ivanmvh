@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/react-capstone-ivanmvh/static/css/main.c81ce0f7.css",
+    "main.js": "/react-capstone-ivanmvh/static/js/main.8f0d4bb0.js",
+    "static/media/cat_food.jpg": "/react-capstone-ivanmvh/static/media/cat_food.785f406a155f76e4ff8d.jpg",
+    "static/media/cat_industry.jpg": "/react-capstone-ivanmvh/static/media/cat_industry.45116f377f6bd136bbc0.jpg",
+    "static/media/cat_places.jpg": "/react-capstone-ivanmvh/static/media/cat_places.003a7219977a31a5f900.jpg",
+    "static/media/cat_buildings.jpg": "/react-capstone-ivanmvh/static/media/cat_buildings.814f1524db5248bd0ad8.jpg",
+    "static/media/cat_travel.jpg": "/react-capstone-ivanmvh/static/media/cat_travel.d9e098c6235c122cdd52.jpg",
+    "static/media/cat_education.jpg": "/react-capstone-ivanmvh/static/media/cat_education.54eccbc4649cc33ad727.jpg",
+    "static/media/cat_transportation.jpg": "/react-capstone-ivanmvh/static/media/cat_transportation.3d921e9432315324a1cd.jpg",
+    "static/media/cat_animals.jpg": "/react-capstone-ivanmvh/static/media/cat_animals.7eefe008e10be84f6e9d.jpg",
+    "static/media/cat_religion.jpg": "/react-capstone-ivanmvh/static/media/cat_religion.26b8a54df1b53d77527b.jpg",
+    "static/media/cat_people.jpg": "/react-capstone-ivanmvh/static/media/cat_people.15d8e6822387e9e1d178.jpg",
+    "static/media/cat_sports.jpg": "/react-capstone-ivanmvh/static/media/cat_sports.4d8d05303978da7fd636.jpg",
+    "static/media/cat_science.jpg": "/react-capstone-ivanmvh/static/media/cat_science.82905c78966e0ce4fcd0.jpg",
+    "static/media/cat_backgrounds.jpg": "/react-capstone-ivanmvh/static/media/cat_backgrounds.b70ecac1f6af759e828c.jpg",
+    "static/media/cat_fashion.jpg": "/react-capstone-ivanmvh/static/media/cat_fashion.4a0b9da2aa67506c7731.jpg",
+    "static/media/cat_computer.jpg": "/react-capstone-ivanmvh/static/media/cat_computer.555c575703ec5eb39230.jpg",
+    "static/media/cat_nature.jpg": "/react-capstone-ivanmvh/static/media/cat_nature.955849d7f055eb840ef3.jpg",
+    "static/media/cat_feelings.jpg": "/react-capstone-ivanmvh/static/media/cat_feelings.50a88d97f5cc3a5ea924.jpg",
+    "static/media/header2.jpg": "/react-capstone-ivanmvh/static/media/header2.2b707bc664cefc93022a.jpg",
+    "static/media/cat_health.jpg": "/react-capstone-ivanmvh/static/media/cat_health.86febbccb728f9036e4e.jpg",
+    "static/media/cat_music.jpg": "/react-capstone-ivanmvh/static/media/cat_music.c4029048268621ca3389.jpg",
+    "index.html": "/react-capstone-ivanmvh/index.html",
+    "main.c81ce0f7.css.map": "/react-capstone-ivanmvh/static/css/main.c81ce0f7.css.map",
+    "main.8f0d4bb0.js.map": "/react-capstone-ivanmvh/static/js/main.8f0d4bb0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c81ce0f7.css",
+    "static/js/main.8f0d4bb0.js"
+  ]
+}
