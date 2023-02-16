@@ -4,7 +4,7 @@
 }
 
 #photoCard {
-  width: 100dvw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -14,7 +14,7 @@
   flex-direction: column;
   flex-basis: 100%;
   padding: 30px;
-  gap:5px;
+  gap: 5px;
 }
 
 .det-row {
@@ -53,11 +53,10 @@
   #photoImageContainer {
     width: 100%;
   }
-  
+
   #photoImageContainer img {
     padding: 5px;
     width: 90%;
     height: auto;
   }
-  
 }

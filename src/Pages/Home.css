@@ -14,7 +14,7 @@ header {
 .buttonNav {
   border: none;
   background-color: transparent;
-  margin-right:10px;
+  margin-right: 10px;
 }
 
 #headerImage {
@@ -33,7 +33,7 @@ header {
   font-size: 0.5rem;
   background-color: rgb(236, 76, 138);
   color: white;
-  font-weight: 800px;
+  font-weight: 800;
 }
 
 /* Apply filer to images */
@@ -112,7 +112,6 @@ hr {
   color: rgb(255, 255, 255);
   font-weight: bold;
   font-size: 17px;
-  
 }
 
 .categoryTitle {
@@ -310,7 +309,7 @@ hr {
 
   #headerText {
     font-size: 0.5rem;
-    background-color: rgb(236, 76, 138);;
+    background-color: rgb(236, 76, 138);
   }
 
   #headerDescription {

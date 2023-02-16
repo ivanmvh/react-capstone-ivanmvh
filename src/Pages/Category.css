@@ -25,7 +25,7 @@ a {
   margin-top: 3%;
   margin-bottom: 3%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0;
   text-align: right;
 }
@@ -45,11 +45,11 @@ a {
 }
 
 .photoCard:nth-child(4n-1) {
-  background-color: rgb(236, 76, 138);;
+  background-color: rgb(236, 76, 138);
 }
 
 .photoCard:nth-child(4n) {
-  background-color: rgb(177, 57, 103);;
+  background-color: rgb(177, 57, 103);
 }
 
 .photoCard:hover {
@@ -82,7 +82,7 @@ a {
   display: flex;
   align-self: flex-end;
   font-size: 15px;
-  margin:3px;
+  margin: 3px;
 }
 
 .photoId {
@@ -104,7 +104,7 @@ a {
   width: 70%;
   border-radius: 20px;
   height: 30px;
-  margin:0;
+  margin: 0;
   margin-top: 3%;
   margin-left: 3%;
   border: 1px solid #b50be5;
@@ -213,7 +213,6 @@ a {
     border: none;
   }
 
-  
   .rightSide {
     display: flex;
     flex-basis: 50%;
