@@ -12,7 +12,7 @@ const PhotoInfo = () => {
   return (
     <>
       <h2 id="photoName">{apiInfo.name ?? ''}</h2>
-      <div id="photoCard" data-testid='photoInfoContainer'>
+      <div id="photoCard" data-testid="photoInfoContainer">
         <div id="photoImageContainer">
           <img
             alt={apiInfo.tags}
