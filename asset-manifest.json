@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-capstone-ivanmvh/static/css/main.c81ce0f7.css",
-    "main.js": "/react-capstone-ivanmvh/static/js/main.8f0d4bb0.js",
+    "main.js": "/react-capstone-ivanmvh/static/js/main.a72158de.js",
     "static/media/cat_food.jpg": "/react-capstone-ivanmvh/static/media/cat_food.785f406a155f76e4ff8d.jpg",
     "static/media/cat_industry.jpg": "/react-capstone-ivanmvh/static/media/cat_industry.45116f377f6bd136bbc0.jpg",
     "static/media/cat_places.jpg": "/react-capstone-ivanmvh/static/media/cat_places.003a7219977a31a5f900.jpg",
@@ -24,10 +24,10 @@
     "static/media/cat_music.jpg": "/react-capstone-ivanmvh/static/media/cat_music.c4029048268621ca3389.jpg",
     "index.html": "/react-capstone-ivanmvh/index.html",
     "main.c81ce0f7.css.map": "/react-capstone-ivanmvh/static/css/main.c81ce0f7.css.map",
-    "main.8f0d4bb0.js.map": "/react-capstone-ivanmvh/static/js/main.8f0d4bb0.js.map"
+    "main.a72158de.js.map": "/react-capstone-ivanmvh/static/js/main.a72158de.js.map"
   },
   "entrypoints": [
     "static/css/main.c81ce0f7.css",
-    "static/js/main.8f0d4bb0.js"
+    "static/js/main.a72158de.js"
   ]
 }
