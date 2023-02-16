@@ -76,6 +76,7 @@ This project is a simple metrics app. The main features are:
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 [Live Demo Link](https://ivanmvh.github.io/react-capstone-ivanmvh/)
+[Intro video](https://drive.google.com/file/d/1e_rTVU-khN6rWv-eB-JlO7PXKftfENWA/view?usp=sharing)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

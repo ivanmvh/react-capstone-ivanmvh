@@ -33,14 +33,6 @@ export const getPhotos = createAsyncThunk('Photos/getPhotos', async (parameters)
       userImageURL: photo.userImageURL ?? '',
     } ?? { name: 'Photo not available' };
 
-    // No Image Available
-    /*
-    const seatMap = photo.hasOwnProperty('seatmap')
-      ? photo.seatmap.staticUrl
-      : 'https://us.123rf.com/450wm/infadel/infadel1712/infadel171200119/infadel171200119.jpg?ver=6';
-    photoInfo.seat = seatMap;
-    */
-
     return photoInfo;
   });
   return photosApi;
