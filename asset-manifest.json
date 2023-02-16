@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-capstone-ivanmvh/static/css/main.c81ce0f7.css",
+    "main.css": "/react-capstone-ivanmvh/static/css/main.e6776b9d.css",
     "main.js": "/react-capstone-ivanmvh/static/js/main.a72158de.js",
     "static/media/cat_food.jpg": "/react-capstone-ivanmvh/static/media/cat_food.785f406a155f76e4ff8d.jpg",
     "static/media/cat_industry.jpg": "/react-capstone-ivanmvh/static/media/cat_industry.45116f377f6bd136bbc0.jpg",
@@ -23,11 +23,11 @@
     "static/media/cat_health.jpg": "/react-capstone-ivanmvh/static/media/cat_health.86febbccb728f9036e4e.jpg",
     "static/media/cat_music.jpg": "/react-capstone-ivanmvh/static/media/cat_music.c4029048268621ca3389.jpg",
     "index.html": "/react-capstone-ivanmvh/index.html",
-    "main.c81ce0f7.css.map": "/react-capstone-ivanmvh/static/css/main.c81ce0f7.css.map",
+    "main.e6776b9d.css.map": "/react-capstone-ivanmvh/static/css/main.e6776b9d.css.map",
     "main.a72158de.js.map": "/react-capstone-ivanmvh/static/js/main.a72158de.js.map"
   },
   "entrypoints": [
-    "static/css/main.c81ce0f7.css",
+    "static/css/main.e6776b9d.css",
     "static/js/main.a72158de.js"
   ]
 }
