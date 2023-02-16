@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const getPhotos = createAsyncThunk('Photos/getPhotos', async (parameters) => {
   const photos = await fetch(
-    `https://pixabay.com/api/?key=33467227-a3f0450de27fd480390de418c&category=${parameters.categoryCode}`,
+    `https://pixabay.com/api/?key=33467227-a3f0450de27fd480390de418c&category=${parameters.categoryCode}&page=1&per_page=50`,
   )
     .then((response) => response.json())
     .then((response) => response.hits);

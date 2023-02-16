@@ -54,7 +54,7 @@ const Category = () => {
       <div id="photosGrid">
         {photos.map((photo) => (
           <NavLink
-            data-testid="photoCard"
+            data-testid='photoCard1'
             className="photoCard"
             onClick={() => dispatch(photoId(photo.id))}
             key={photo.id}

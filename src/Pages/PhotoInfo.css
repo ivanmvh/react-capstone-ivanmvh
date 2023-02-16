@@ -39,10 +39,6 @@
   padding: 5px;
 }
 
-#backArrow {
-
-}
-
 @media (min-width: 768px) {
   #photoName {
     margin: 3%;
@@ -50,17 +46,18 @@
 
   #photoCard {
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     height: 50%;
   }
 
   #photoImageContainer {
-    width: 70%;
+    width: 100%;
   }
   
   #photoImageContainer img {
-    height: 30vw;
     padding: 5px;
+    width: 90%;
+    height: auto;
   }
   
 }
